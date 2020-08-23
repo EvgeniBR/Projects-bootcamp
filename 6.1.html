@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //6,1
+
+      let mumbleArray = [];
+      function mumblify(str) {
+        let splitStr = str.split("");
+        let i = 0;
+        while (i < splitStr.length) {
+          mumbleArray.push(splitStr[i].repeat(i + 1));
+          i++;
+        }
+        for (let j = 0; j < mumbleArray.length; j++) {
+          mumbleArray[j] =
+            mumbleArray[j].charAt(0).toUpperCase() + mumbleArray[j].substr(1);
+        }
+        mumbleArray = mumbleArray.join("-");
+        console.log(mumbleArray);
+      }
+      mumblify(`TestCrazyString`);
+    </script>
+  </body>
+</html>

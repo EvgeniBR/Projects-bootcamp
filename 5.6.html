@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+// 5.6
+function maskify(str){
+
+let masked = str.replace(/.(?=.{4,}$)/g, '#');
+console.log(masked);
+}
+maskify(`1111-1111-1111-1111`);
+maskify(`206313868`);
+maskify(`310837174`);
+maskify(`3108`);
+maskify(`31`);
+
+
+  </script>
+</body>
+</html>

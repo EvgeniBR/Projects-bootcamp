@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const array = "Indivisibilities";
+      function howManyCharsRepeated(str) {
+        let counts = {};
+        let newArray = array.split("");
+        newArray.forEach((i) => (counts[i] = counts[i] ? ++counts[i] : 1));
+        console.log(counts);
+        
+      }
+      howManyCharsRepeated(array);
+    </script>
+  </body>
+</html>

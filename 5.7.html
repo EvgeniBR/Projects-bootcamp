@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      testArr = ["aaaaaa", "bbbbb", "cccc", "ddd", "eeeeee"];
+
+      function shortestLength(arr) {
+        arr.sort(function (a, b) {
+          // ascending array  -> a.length - b.length
+          // descending -> b.length - a.length
+          return a.length - b.length
+        });
+        let firstStrInArray = arr[0];
+        console.log(firstStrInArray.length)
+      }
+      shortestLength(testArr);
+    </script>
+  </body>
+</html>

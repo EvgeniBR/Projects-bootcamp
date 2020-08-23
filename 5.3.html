@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function camelCase(str) {
+  return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(word, index) {
+    return index === 0 ? word.toLowerCase() : word.toUpperCase();
+  }).replace(/\-+/g, '').replace(/\_+/g, '');
+}
+console.log(camelCase("the-stealth-warrior"));
+
+ function PascalCase(str) {
+    return  (" " + str).toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, function(match, chr)
+    {
+        return chr.toUpperCase();
+    });
+}
+
+console.log(PascalCase("The_Stealth_Warrior"));
+  </script>
+  
+</body>
+</html>

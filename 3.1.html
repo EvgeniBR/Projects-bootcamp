@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Growth Of population
+
+      let population = 1000;
+      let yearCounter = 0;
+      let growth = 0;
+      let newCommers = 0;
+      function populationGoal(people , growth , newCommers){
+      while (population <= people) {
+        population = population * (1 +parseFloat(growth)/100 )+ newCommers;
+        yearCounter++;
+      }
+    }
+      populationGoal(1200 ,`2%` ,50);
+      console.log(yearCounter);
+      console.log(`It going to take ${yearCounter} years for the population to reach our goal`);
+      
+     
+    </script>
+  </body>
+</html>

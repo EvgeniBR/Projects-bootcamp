@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Tribonacci
+    function myTribArray(num){
+      let TribArray = [];
+       TribArray[0]=1;
+       TribArray[1]=1;
+       TribArray[2]=1;
+     
+      for(let i=3; i<=num ; i++){
+        TribArray.push(TribArray[i-3]+ TribArray[i-2]+ TribArray[i-1])
+      }
+      console.log(TribArray);
+    }
+    (myTribArray(20));
+    
+  </script>
+  </body>
+</html>

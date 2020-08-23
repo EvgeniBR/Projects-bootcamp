@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //4.1
+    
+    function myFibArray(num){
+      let fibArray = [];
+       fibArray[0]=0;
+       fibArray[1]=1;
+     
+      for(let i=2; i<=num ; i++){
+        fibArray.push(fibArray[i-2]+ fibArray[i-1])
+      }
+      console.log(fibArray);
+    }
+    (myFibArray(20));
+    
+  </script>
+</body>
+</html>

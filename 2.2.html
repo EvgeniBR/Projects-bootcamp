@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- /Ex2.2 - One and Zero - Binary -->
+    <script>
+      let array = [0, 0, 0, 1]; //==> 1
+      let binaryToInteger = parseInt(array.join(""), 2);
+      console.log(binaryToInteger);
+
+      let array1 = [0, 0, 1, 0]; //==> 2
+      let binaryToInteger1 = parseInt(array1.join(""), 2);
+      console.log(binaryToInteger1);
+
+      let array2 = [1, 1, 1, 1]; //==> 15
+      let binaryToInteger2 = parseInt(array2.join(""), 2);
+      console.log(binaryToInteger2);
+
+      // Testing: [0, 1, 0, 1] ==> 5
+      // Testing: [1, 0, 0, 1] ==> 9
+      // Testing: [0, 0, 1, 0] ==> 2
+      // Testing: [0, 1, 1, 0] ==> 6
+      // Testing: [1, 0, 1, 1] ==> 11
+    </script>
+  </body>
+</html>

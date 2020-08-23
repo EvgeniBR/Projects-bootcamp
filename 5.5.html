@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //5.5 initials
+      
+      function returnMyInitials(str) {
+        let myInitials = [];//last array to join
+        let splitStr = str.split(" ");//split the name into array of first and last
+        let firstNameStr = splitStr[0];
+        let lastNameStr = splitStr[1];
+        let splitFirstNameString = firstNameStr.split("");//splits fisrt name to array of letters
+        let splitLastNameString = lastNameStr.split("");//splits last name to array of letters
+        myInitials.push(splitFirstNameString[0].toUpperCase());//push the first letter to my array and uppercase it
+        myInitials.push(splitLastNameString[0].toUpperCase());//push the first letter to my array and uppercase it
+        myInitials = myInitials.join('.')//join my array of 2 letters with dot in between
+        console.log(myInitials);
+      }
+      returnMyInitials(`evgeni bershadsky`);
+      returnMyInitials(`Victoria Bershadsky`);
+      returnMyInitials(`pini hodadaded`);
+      returnMyInitials(`Michael Sapyan`);
+    </script>
+  </body>
+</html>

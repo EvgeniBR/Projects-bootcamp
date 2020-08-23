@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Ex2.1 - Sum of lowest numbers
+   let numArray=[1245,124,56,5312,1234412,124,23,98,13,6231,865,5123,32,465,79,6,21213,2123,];
+   let sortedArray = numArray.sort((a , b) => a-b).slice(0,2);
+   console.log(sortedArray);//midway check
+
+   //it's just 2 number can just add them or use reduce method
+   console.log(sortedArray[0]+sortedArray[1]);
+   console.log((sortedArray).reduce((a,b)=> a+b,0));
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Find the Next Perfect Square
+      // console.log(Math.sqrt(121));
+      // console.log(Math.pow(11,2));
+
+      function findNextSquare(integer) {
+        if (Math.sqrt(integer) % 1 === 0) {
+          let nextSquare = Math.ceil(Math.sqrt(integer + 1));
+          return (nextSquare = Math.pow(nextSquare, 2));
+        } else {
+          return -1;
+        }
+      }
+      console.log(findNextSquare(121));
+      console.log(findNextSquare(625));
+      console.log(findNextSquare(114));
+    </script>
+  </body>
+</html>
